@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	client := anthropic.NewClient(option.WithAPIKey("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"))
+	client := anthropic.NewClient(option.WithAPIKey(""))
 
 	scanner := bufio.NewScanner(os.Stdin)
 
