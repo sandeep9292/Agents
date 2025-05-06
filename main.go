@@ -1,18 +1,15 @@
 package main
 
 import (
-	"bufio"
 	"context"
 	"fmt"
-	"os"
 
 	"github.com/anthropics/anthropic-sdk-go"
 )
 
 func main() {
-	client := anthropic.NewClient()
-
-	scanner := bufio.NewScanner(os.Stdin)
+	//client := anthropic.NewClient()
+	//scanner := bufio.NewScanner(os.Stdin)
 
 	getUserMessage := func() (string, bool) {
 		if !scanner.Scan() {
