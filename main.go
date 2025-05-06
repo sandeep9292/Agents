@@ -7,11 +7,10 @@ import (
 	"os"
 
 	"github.com/anthropics/anthropic-sdk-go"
-	"github.com/anthropics/anthropic-sdk-go/option"
 )
 
 func main() {
-	client := anthropic.NewClient(option.WithAPIKey(""))
+	client := anthropic.NewClient()
 
 	scanner := bufio.NewScanner(os.Stdin)
 
